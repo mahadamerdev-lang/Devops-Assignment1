@@ -110,6 +110,37 @@ footer {
 /* Clubs (clubs.html) — Member 1 */
 
 /* Events (events.html) — Member 2 */
+.hero{
+    text-align:center;
+    margin-bottom:2rem;
+}
+
+.hero h2{
+    color:var(--color-primary);
+    margin-bottom:0.5rem;
+}
+
+.event-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:1.5rem;
+}
+
+.event-card{
+    background:white;
+    padding:1.25rem;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+.event-card h3{
+    color:var(--color-primary);
+    margin-bottom:0.75rem;
+}
+
+.event-card p{
+    margin:0.4rem 0;
+}
 
 /* Join (join.html) — Member 3 */
 
@@ -140,4 +171,15 @@ footer {
   .grid {
     grid-template-columns: 1fr;
   }
+}
+@media (max-width:768px){
+
+    .event-container{
+        grid-template-columns:1fr;
+    }
+
+    .hero h2{
+        font-size:1.6rem;
+    }
+
 }
