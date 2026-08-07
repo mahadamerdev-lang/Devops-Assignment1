@@ -108,6 +108,138 @@ footer {
 /* Home (index.html) — Team Lead */
 
 /* Clubs (clubs.html) — Member 1 */
+/* Clubs Page — Member 1 */
+
+.clubs-page {
+    min-height: 100vh;
+}
+
+.clubs-page .page-intro {
+    background: linear-gradient(135deg, #2b4c7e, #4169a1);
+    color: #ffffff;
+    padding: 3rem 1.5rem;
+    text-align: center;
+}
+
+.clubs-page .page-intro h2 {
+    margin: 0 0 0.75rem;
+    font-size: 2.3rem;
+}
+
+.clubs-page .page-intro p {
+    max-width: 750px;
+    margin: 0 auto;
+    font-size: 1.05rem;
+}
+
+.clubs-page .clubs-section {
+    padding: 3rem 1.5rem;
+}
+
+.clubs-page .clubs-section h2 {
+    text-align: center;
+    color: var(--color-primary);
+    margin-bottom: 2rem;
+}
+
+.clubs-page .club-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.clubs-page .club-card {
+    background-color: var(--color-surface);
+    border-radius: var(--radius);
+    padding: 1.5rem;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    border-top: 4px solid var(--color-accent);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.clubs-page .club-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.clubs-page .club-icon {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.clubs-page .club-card h3 {
+    color: var(--color-primary);
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+}
+
+.clubs-page .club-card p {
+    color: var(--color-muted);
+}
+
+.clubs-page .club-card ul {
+    padding-left: 1.2rem;
+}
+
+.clubs-page .club-card li {
+    margin-bottom: 0.35rem;
+}
+
+.clubs-page .clubs-cta {
+    background-color: var(--color-surface);
+    padding: 3rem 1.5rem;
+    text-align: center;
+}
+
+.clubs-page .clubs-cta h2 {
+    color: var(--color-primary);
+}
+
+.clubs-page .clubs-cta p {
+    max-width: 700px;
+    margin: 0 auto 1.5rem;
+}
+
+.clubs-page .cta-button {
+    display: inline-block;
+    background-color: var(--color-accent);
+    color: #222222;
+    padding: 0.7rem 1.4rem;
+    border-radius: var(--radius);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.clubs-page .cta-button:hover {
+    opacity: 0.9;
+}
+
+
+/* Clubs Page Responsive Design — Member 1 */
+
+@media (max-width: 768px) {
+    .clubs-page .club-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .clubs-page .page-intro h2 {
+        font-size: 1.8rem;
+    }
+
+    .clubs-page .clubs-section {
+        padding: 2rem 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .clubs-page .club-card {
+        padding: 1.1rem;
+    }
+
+    .clubs-page .page-intro {
+        padding: 2rem 1rem;
+    }
+}
 
 /* Events (events.html) — Member 2 */
 .hero{
