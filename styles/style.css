@@ -1,0 +1,143 @@
+/* ==========================================================
+   University Student Clubs Portal — Shared Stylesheet
+   Each contributor: add page-specific rules under the
+   relevant section comment. Keep selectors scoped to your
+   page's root class to avoid conflicts with teammates.
+   ========================================================== */
+
+:root {
+  --color-bg: #f7f7fb;
+  --color-surface: #ffffff;
+  --color-primary: #2b4c7e;
+  --color-accent: #e6a817;
+  --color-text: #222222;
+  --color-muted: #6b6b6b;
+  --radius: 8px;
+  --max-width: 1100px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+header {
+  background-color: var(--color-primary);
+  color: #fff;
+  padding: 1rem 1.5rem;
+}
+
+header .site-title {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 0.5rem 0 0;
+  padding: 0;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+nav a:hover,
+nav a:focus {
+  text-decoration: underline;
+}
+
+main {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+.card {
+  background-color: var(--color-surface);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+  margin-bottom: 1.25rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.card h2 {
+  margin-top: 0;
+  color: var(--color-primary);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.25rem;
+}
+
+.btn {
+  display: inline-block;
+  background-color: var(--color-accent);
+  color: #222;
+  padding: 0.6rem 1.2rem;
+  border-radius: var(--radius);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  color: var(--color-muted);
+  font-size: 0.9rem;
+}
+
+/* ==========================================================
+   Page-specific sections — add yours below, keep it scoped
+   ========================================================== */
+
+/* Home (index.html) — Team Lead */
+
+/* Clubs (clubs.html) — Member 1 */
+
+/* Events (events.html) — Member 2 */
+
+/* Join (join.html) — Member 3 */
+
+/* Highlights (highlights.html) — Member 4 */
+
+/* ==========================================================
+   Responsive breakpoints
+   Each contributor should add at least one media query
+   relevant to their own page's layout.
+   ========================================================== */
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  main {
+    padding: 1.25rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  header .site-title {
+    font-size: 1.2rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
