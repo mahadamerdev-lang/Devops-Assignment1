@@ -315,3 +315,29 @@ footer {
     }
 
 }
+
+
+/* Highlights Page Styles - Added by Ali Husnain (Member 4) */
+.highlight-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px 0;
+    background-color: #f9f9f9;
+}
+
+.highlight-card h3 {
+    color: #2c3e50;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+    .highlight-card {
+        padding: 10px;
+        margin: 5px 0;
+    }
+
+    .highlights-page h2 {
+        font-size: 1.2em;
+    }
+}
